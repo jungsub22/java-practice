@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<title>마지막</title>
+	<script type="text/javascript">
+		document.write("<h1>날짜 바꾸기</h1>");
+	var toDay=new Date;
+	// document.write(toDay);
+	toDay.setMonth(11); //12월로 표현을 하려면 11로
+	toDay.setDate(25);  //일은 그대로 써야된다 
+	// document.write(toDay);
+
+	 var newMonth=toDay.getMonth()+1
+	 document.write("월:"+newMonth+"<br>");
+	 var newDate=toDay.getDate();
+	 document.write("일:"+newDate+"<br>");
+
+
+
+
+
+
+	</script>
+</head>
+<body>
+
+</body>
+</html>

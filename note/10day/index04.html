@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="kom">
+<head>
+	<meta charset="utf-8">
+	<title>박스2</title>
+	<style type="text/css">
+		*{margin: 0;padding: 0;}
+		body{margin: 10px;}
+		h1{background-color: gold;width: 100px;height: 100px;}
+		button{margin: 1px;}
+		strong{font-size: 20px;}
+		#box2{position:relative; /*absolute;*/
+		/*top:0;*/
+	/*margin-bottom: 100px;*/}
+		/*p{margin-top: 100px;}*/
+	</style>
+	<script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$("#rightBtn").click(function(){
+				$("#box2").stop().animate({left:"+=100px"},500
+					);
+			});
+			// $("#leftBtn").click(function(){
+			// 	$("#box2").stop().animate({left:"-=100px"},500)
+			// });
+			$("#leftBtn").click(function(){
+				$("#box2").clearQueue().animate({
+					left:"-=100px"
+				},500
+				);
+			});
+		});
+	</script>
+</head>
+<body>
+	<div>
+	<h1 id="box2">박스2</h1>
+	<p>
+		<button id="leftBtn"><strong>left</strong></button>
+		<button id="rightBtn"><strong>right</strong></button>
+	</p>
+	</div>
+</body>
+</html>

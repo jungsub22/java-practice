@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<title>6교시 7교시</title>
+	<script type="text/javascript">
+		var arr=new Array();
+		// arr=["김부자","정현철","정주영","김민경","장영주"];
+		// document.write(arr[]);    //null(안나온다)
+		// document.write(arr[4]+"<br>");  //장영주
+
+		// arr[0]=["김부자"];
+		// arr[1]=["정현철"];
+		// arr[2]=["정주영"];
+		// arr[3]=["김민경"];
+		// arr[4]=["장영주"];
+		// document.write(arr);
+
+		// var days=new Array("일","월","화","수","목","금","토");
+		// var today=new Date();
+		// var yoil=days[today.getDay()];
+		// // var yoil=days[1];같은말이다 위말이랑
+		// document.write(yoil+"요일 <br>");
+				// [인덱스0,1,2,3]
+		var money=[100,100,200,50]; //[]은 배열 이다.
+		var theLen=money.length;	//money.length가 개수니까 4개
+		var total=0;	
+			// var i=0; i<4; i++    
+			// var i=1; i<4; i++
+			// var i=2; i<4; i++
+			// var i=3; i<4; i++
+			// var i=4; i<4; i++
+			//초기값;조건식;증감식
+		for(var i=0; i<theLen; i++){
+					// money[인덱스]
+			total=total+money[i];//i=0,i=1,i=2,i=3
+			// 100=0+100
+			// 200=100+100
+			//400=200+200
+			//450=400+50
+		}
+		document.write(total);
+
+	</script>
+</head>
+<body>
+
+</body>
+</html>

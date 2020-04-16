@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<title>이미지 넘기기</title>
+	<script type="text/javascript">
+		var num=0;
+		var colWidth=-800;
+		function mvBanner(whichBtn){
+			var myBannerList=document.getElementById("bannerList");
+			// *****if(조건식){설정값(=실행문);}***else{아닐경우의 설정값(=실행문);}
+			if(whichBtn=="leftBtn"){
+				num--;             
+				if(num<0){ 
+					num=1;         
+				} 
+				var xPos=num*colWidth;
+				myBannerList.style.left=xPos+"px";
+			}
+			else{        
+				num++;
+				if(num>1){  
+					num=0;
+				}
+				var xPos=num*(-colWidth);
+				myBannerList.style.left=xPos+"px";
+			}
+
+		}
+
+	</script>
+	<style type="text/css">
+		*{margin: 0; padding: 0;}
+		li{list-style: none;float: left;}
+
+
+		#bannerWrap{position: relative;}
+		.frame{position: relative;width: 800px;overflow: hidden;height: 150px;}
+		#bannerList{position: absolute;left: 0;}
+		
+
+		.leftBtn{position: absolute;left: 820px;top: 20px;}
+		.rightBtn{position: absolute;left: 820px;top: 80px;}
+
+	</style>
+</head>
+<body>
+	<div id="bannerWrap">
+		<div class="frame">
+			<ul id="bannerList">
+				<li><a href="#"><img src="images/s_img1.jpg" alt="배너1"></a></li>
+				<li><a href="#"><img src="images/s_img2.jpg" alt="배너2"></a></li>
+				<li><a href="#"><img src="images/s_img3.jpg" alt="배너3"></a></li>
+				<li><a href="#"><img src="images/s_img4.jpg" alt="배너4"></a></li>
+				<li><a href="#"><img src="images/s_img5.jpg" alt="배너5"></a></li>
+				<li><a href="#"><img src="images/s_img6.jpg" alt="배너6"></a></li>
+				<li><a href="#"><img src="images/s_img7.jpg" alt="배너7"></a></li>
+			</ul>
+		</div>	
+		<a href="#" class="leftBtn" onclick="return mvBanner('leftBtn')">
+			<img src="images/s_left.png" alt="왼쪽버튼">
+		</a>
+		<a href="#" class="rightBtn" onclick="return mvBanner('rightBtn')">
+			<img src="images/s_right.png" alt="오른쪽버튼">
+		</a>
+	</div>
+</body>
+</html>

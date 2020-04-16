@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<title>전역변수 지역변수</title>
+	<script type="text/javascript">
+		var num;                   //전역변수 num 선언 
+		function theFnc(){
+			num=30;					//지역변수 num 선언  **전역변수에잇는 선언값을 지역변수에 넣어서 사용하는것
+		}	
+		theFnc();   //**함수 호출**
+		document.write(num);
+
+	</script>
+</head>
+<body>
+
+</body>
+</html>

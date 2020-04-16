@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<title>theTest</title>
+	<script type="text/javascript">
+		var i=10;     //전역 변수 
+		var num=20;
+		function theTest(){
+			var num=i+200;   //지역변수 
+			alert(num);
+		}
+		theTest();
+
+		function theFnc(){
+			document.write(num);
+		}
+		theFnc();
+	</script>
+</head>
+<body>
+
+</body>
+</html>

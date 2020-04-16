@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<title>현재날짜/시간 정보</title>
+	<script type="text/javascript">
+		document.write("<h1>현재날짜/시간 정보</h1>");
+		// documnet.write(today);
+		var today=new Date();
+		var nowMonth=today.getMonth()+1;
+		document.write("월:"+ nowMonth+"<br>");
+		var nowDate=today.getDate();
+		document.write("일:"+ nowDate+"<br>");
+		var nowDay=today.getDay();
+		document.write("요일:"+nowDay+"<br>");
+		var nowHours=today.getHours();
+		document.write("시:"+nowHours+"<br>");
+		var nowMinutes=today.getMinutes();
+		document.write("분:"+nowMinutes+"<br>")
+		var nowSeconds=today.getSeconds();
+		document.write("초:"+nowSeconds+"<br>")
+		// ***1970년대 시간부터 초로 나온것이 Time***
+		var nowTime=today.getTime();
+		document.write("시간:"+nowTime+"<br>")
+		// document.write(<img src='images/img1.jpg>')
+		document.write('<img src="images/img1.jpg">');
+	</script>
+</head>
+<body>
+	<!-- <p><img src="images/img1.jpg"></p> -->
+</body>
+</html>
