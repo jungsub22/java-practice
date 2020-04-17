@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<script type="text/javascript">
+		window.onload=function(){
+			var theList=document.getElementById("theList");
+			var listAll=theList.getElementsByTagName("li");
+			var copyList=listAll[3].cloneNode(true);
+   							//[안은 인덱스 0을 포함한 숫자를센다 ] cloneNode는 복제하는걸 말한다.
+   			theList.removeChild(listAll[3]);				//remove는 제거를 의미한다 child는 자식을 의미힌다.
+   			theList.insertBefore(copyList,listAll[0]);     //insertBefore 앞에 넣는거 (들어갈거,들어가는기준)
+   			
+     
+
+		}
+	</script>
+</head>
+<body>
+	<h1>문서 객체 조작</h1>
+	<ul id="theList">
+		<li>리스트2</li>
+		<li>리스트3</li>
+		<li>리스트4</li>
+		<li>리스트1</li>
+	</ul>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<title>2교시01</title>
+	<style type="text/css">
+		#theBox{background-color: gold;width: 250px;}
+		#btn1{margin-right: 10px;}
+
+	</style>
+	<script type="text/javascript">
+		// document.write("<h1>요소 생성 연습</h1>");
+		//on은 자바에서 거이 들어간다고 보면된다 
+		window.onload=function(){
+			var newPtag=document.createElement("p");    //createElement는 ();안에를 만드는거다
+ 			var newButton1=document.createElement("button");
+ 			var newButton2=document.createElement("button");
+ 			var text1=document.createTextNode("버튼1");       //TextNode는 버튼안에 글씨 넣는거 
+ 			var text2=document.createTextNode("버튼2");
+
+ 			newButton1.setAttribute("id","btn1");
+ 			newButton2.setAttribute("id","btn2");   //setAttribute는 속성을 설정하는 기능이다
+
+ 			newButton1.appendChild(text1);
+ 			newButton2.appendChild(text2);        //button 사이에 글넣는거 그거 ㅇㅇ 
+
+ 			newPtag.appendChild(newButton1);      //p태그가 한개이기떄문에 button이 p태그 하나에 다들어감
+ 			newPtag.appendChild(newButton2);
+
+ 			var theObj=document.getElementById("theBox");
+ 			theObj.appendChild(newPtag);
+
+		}
+	</script>
+</head>
+<body>
+	<div id="theBox">
+		<h1>요소 생성 연습</h1>
+	</div>
+      <!-- <button id btn 을 넣는것이 setAttribute고  > 여기에 말넣는게 appendChild다</button> -->
+<!--       <p>
+      	<button></button>
+      	<button></button>
+      </p>
+       p태그가 한개이기떄문에 button이 p태그에 다들어가게됨 --> 
+  </body>
+</html>

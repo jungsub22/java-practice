@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+	<meta charset="utf-8">
+	<title>페이지 만들기</title>
+</head>
+<body>
+	<h1>두번째 페이지</h1>
+	<p> <a href="index03.html">마지막페이지로 이동</a></p>
+	
+		<!-- <button >이전페이지로 이동</button><button>다음페이지로 이동</button><button>forward버튼</button> -->
+														  <!-- onclick="history.dd();"history는 기록같은거남겨야되는거임 -->
+	<input type="button" name="" value="이전페이지로 이동" onclick="history.back();">
+																	<!-- back은 이전페이지에 history가 있어야함 -->
+	<input type="button" name="" value="다음페이지로 이동" onclick="history.go(1);"> <!-- go는 다음페이지에대한 history가 있어야함 -->	
+	<input type="button" name="" value="forward버튼" onclick="history.forward();">
+																	<!-- forward는 직전에 history만 인식이된다 -->
+
+</body>
+</html>
