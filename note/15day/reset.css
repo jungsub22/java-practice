@@ -1,0 +1,9 @@
+@charset"utf-8";  
+/*글자 꺠지지말라고 쓰는거 */
+html, header,div,h1,form,fieldset,legend,label,input,ul,nav,li,a,hr,section,img,article,p,strong,footer,span,iframe,body,address,small,h2{margin:0; padding: 0;}
+hr{display: none;}
+li img, dd img{vertical-align: top;}
+input{vertical-align: middle;}
+li{list-style-type: none;}
+img,fieldset,iframe{border:0;}   /*,열거기능*/
+#skip, .skip{font-size: 0;width: 0;height: 0;line-height: 0;position: absolute;left: -9999px;}
