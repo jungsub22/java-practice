@@ -81,6 +81,5 @@ ex)header에서 width값이 1003이기떄문에 이 1003의 영향을받음*/
 .next{right: 0;}
 #book_roll{position: absolute;left: 48%;bottom: 0;}
 #book_roll li{display: inline;}
-
-/*이미지 12일차 9일차 제이커리 도큐먼트라이트로 표현하는거
-부호 써도되는거 2가지 ($ _)*/
+#book_roll li img{width: 8px;}
+#content{width: 95%; margin: 0 auto;border-top: 3px double #ccc;padding: 30px 0;}
