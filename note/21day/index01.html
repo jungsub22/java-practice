@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<title>리뷰</title>
+</head>
+<body>
+	<strong>인라인요소</strong><span>인라인 요소는 한줄로 출력됩니다.</span>
+	<span><h1>블록 레벨 요소</h1></span>
+	<!-- 인라인이 감싸고있어도 블록요소다 블록이 더쎄다. -->
+	<p>p 요소는 텍스트와 인라인 요소를 포함할 수 있지만 같은 블록 요소(p요소)는 포함할수 없습니다.</p>
+	<p>p요소는 텍스트와 인라인 요소를 포함할 수 있지만 같은 블록 요소는 포함할 수 없습니다.</p>
+												<!-- p에 p를 못쓴다 -->
+	<p>p 요소는 텍스트와 인라인 요소를 포함할 수 있지만
+	<p>같은 블록요소는</p>	 
+	<p>포함할 수 없습니다.</p>	
+	</p>																						
+ 	<pre>           <!-- pre안에 자유형식으로 쓰면 그대로나옴 -->
+		p요소는 텍스트와 인라인 요소를 
+		 포함할 수 있지만
+		     같은 블록 요소는 
+		        포함할수 없다.
+	</pre>
+
+	<address>
+		경기도 부천시 오정구 삼정동 297-5 <br>
+		이메일:<a href="mailto:asdfnklndl@naver.com">asdfnklndl@naver.com</a> <br>
+					<!-- mailto: 는 메일을 보내는역할을 한다. -->
+		전화번호:032-212-2345
+	</address>
+
+	<h1>a 태그</h1>
+	<a href="#jungsub22@Naver.com">정섭</a>
+	<a href="mailto:jungsub22@Naver.com">jungsub22@Naver.com</a><br>
+	<a href="#">
+		<section>
+			<h2>새로나온 책</h2>
+			<p>반응형 웹퍼블리싱</p>
+		</section>
+	</a>
+<!-- 	<h2><a href="#">새로나온책</a></h2>
+	<a href="#">반응형 웹퍼블리싱</a><br> -->
+	<a href="#content">본문바로가기</a> <br>
+	<p>'댄싱9' 우승으로 대중에게 잘 알려진 안무가 김설진이 선보이는 작품은 '섬 SOM'이다. 함께 존재하지만 섬처럼 따로 떨어져서 존재하기에 그 간극에 소통과 언어, 몸짓들로 생긴 오해들, 스스로조차 오해하고 살아가고 있는데 서로를 편견없이 보는 것이 가능한가에 대해 움직임으로 풀어간다. 오는 5월8~10일 관련한 오픈리서치전 '섬 exhibition'도 합정동 '온수공간'에서 선보인다.
+	</p>
+	<p id="content">본문내용</p>
+	
+</body>
+</html>

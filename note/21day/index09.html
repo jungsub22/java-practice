@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<style type="text/css">
+		/*td{border:1px solid black;}
+		.td1{border-right: none;
+			border-bottom: none;}
+		.td2{border-right: none;
+			border-bottom: none;}
+		.td3{border-right: none;
+			border-bottom: none;}
+		.td4{border-right: none;}
+		#td1{border-bottom: none;}
+		#td2{border-bottom: none;}
+		#td3{border-bottom: none;}*/
+		/*******************************************/
+		table{
+			width: 100%;
+			border-collapse: collapse;
+			/*border-collapse는 보더의 기능을 막는다 라는 개념*/
+		}
+		td{
+			border:1px solid #000;
+		}
+	</style>
+</head>
+<body>
+	<table width="100%">
+	<!-- <table border="1" width="100%"> -->
+		<colgroup>
+		<col width="60%">
+		<col width="40%">	
+		</colgroup>
+	<tr>
+		<td class="td1">교과목</td>
+		<td id="td1">점수</td>
+	</tr>
+	<tr>
+		<td class="td2">HTML</td>
+		<td id="td2">93</td>
+	</tr>
+	<tr>
+		<td class="td3">CSS</td>
+		<td id="td3">92</td>
+	</tr>
+	<tr>
+		<td class="td4">평균</td>
+		<td id="td4">92.5</td>
+	</tr>
+	</table>
+</body>
+</html>

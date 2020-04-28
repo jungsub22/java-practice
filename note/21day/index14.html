@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<title></title>
+</head>
+<body>
+ 	<form>
+ 		<fieldset>
+ 			<legend>
+ 				정규식 속성
+ 			</legend>
+ 			<p>
+ 				<label for="tel">휴대폰 번호:</label>
+ 				<input type="tel" name="" id="tel" pattern="\d{3}-\d{3,4}-\d{4}"
+ 				required="required" title="휴대폰 번호는 숫자 3자리-숫자3자리에서4자리-숫자4자리 입력" 
+ 			>
+ 			<!-- **pattern(속성)에 띄어쓰기하면 안된다** -->
+ 			</p>
+ 			<p>
+ 				<input type="submit" name="" value="확인">
+ 			</p>
+ 		</fieldset>
+ 	</form>
+</body>
+</html>

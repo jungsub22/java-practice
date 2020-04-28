@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<script type="text/javascript">
+		var num=1;
+		function nextgallery(){
+			num++;
+			if(num>7) num=1;
+			document.getElementById("gallery").src="images/img"+num+".jpg";return false
+			function prevgallery(){
+				num--;
+				if(num<1) num=7;
+				document.getElementById("gallery").src="images/img"+num+".jpg";return false
+			}
+		}
+	</script>
+</head>
+<body>
+	<h1>이미지 넘기기</h1>
+	<p>
+		<a href="#prev" onclick="return prevgallery();">
+			<img src="">
+		</a>
+		<img src="" id="gallery">
+		<a href="#next" onclick="return nextgallery();">
+			<img src="">
+		</a>
+	</p>
+</body>
+</html>
