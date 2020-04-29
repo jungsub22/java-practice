@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<style type="text/css">
+		/*div>p{color: blue;}*/
+		h3+p{color: blue;}
+		/*** + 는 바로 아래 동생 한테만 적용이 된다.***/
+		/*div>p{color: blue;}*/
+		h3~p{color: blue;}
+		/**** ~ 는 동생,동생들을 적용시키는것이다.****/ 
+	</style>
+</head>
+<body>
+	<!-- <p>아래의 내용을 참조 바랍니다.</p>	
+	<h3>엑스포 안내</h3>
+	<div>
+	<p>책자를 배부하고 있습니다.</p>
+	</div>
+	<p>안내데스크를 활용하시기 바랍니다.</p> -->
+	<article>
+		<p>아래의 내용을 참조 바랍니다.</p>
+		<h3>엑스포 안내</h3>
+		<!-- <div> -->
+		<p>책자를 배부하고 있습니다.</p>	
+		<p>안내데스크를 활용하시기 바랍니다.</p>	
+		<ul>
+			<li>주중에는 정오 이벤트가 있습니다.</li>
+			<li>주중에는 정오 이벤트가 있습니다.</li>
+		</ul>
+		<p>9월에는 가을 이벤트가 시작됩니다.</p>
+		<!-- </div> -->
+	</article>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<style type="text/css">
+		p{width: 100px; border:2px solid black;}
+		.p1{word-break: normal;}
+			/*normal은 아무효과가없고*/
+		.p2{word-break: break-all;}
+		/*break all 은 위드안에 단어를 놔둠 */
+		.p3{word-break: keep-all;}
+		.p4{word-break: keep-all;word-wrap:break-word; }
+			/*word-wrap break word 는 위드안에 단어를 놔두게한다.*/
+			
+	</style>
+</head>
+<body>
+	<p class="p1">
+		asdnfladsnflnasdlfnlasdnlfnasdlfnalsdfnlansdfl
+	</p>
+	<p class="p2">
+		asdnflkadsnlkzxncnmdfasnlk
+	</p>
+	<p class="p3">
+		asdnlkfansdlkfndsklfnalsdkfnlasdnflasdnflkknasdfnlasdfnl
+	</p>
+	<p class="p4">
+		asdflasdfkjasdfblasdbflasdflkasdfnzxcvzxcvzxvczxcv
+	</p>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<title>말줄임</title>
+	<style type="text/css">
+		p{
+			width: 200px;
+			overflow: hidden;
+			/*text-overflow:clip;은 width를 넘어간 글자가 짤린다.*/
+			white-space: nowrap;
+			/**width 안에 들어가잇던 글자들이 가로로 되면서 벗어나게된다***/
+			text-overflow: ellipsis;
+			/*ellipsis는 말줄임표 */
+			/***width를 벗어난 글자들이 ...줄임표로 바뀌게된다.***/
+			border:5px solid salmon;
+		}
+		a{text-decoration: none;color: black;}
+	</style>
+</head>
+<body>
+	<!-- 들여쓰기 text indent -->
+	<!-- word-wrap:break-word 긴 한단어를 박스안에 강제개행 시키는것. -->
+	<p>
+		<a href="#">
+			시간배분을 위하여 나는 똥을쌀수있습니다.
+		</a>		
+	</p>
+</body>
+</html>
